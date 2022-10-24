@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "Poetry Base Project"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Cañadillas"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+httpx = "^0.23.0"
+autopep8 = "^1.7.0"
+fastapi = {extras = ["all"], version = "^0.85.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
